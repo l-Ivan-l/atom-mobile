@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0603055b3613404ba3ab0796ff344a0, type: 3}
+  m_Name: ResBullet
+  m_EditorClassIdentifier: 
+  bulletName: ResorteraBullet
+  enemyBullet: 0
+  speed: 5
+  upForce: 6
+  knockback: 200
+  damage: 38
+  lifeTime: 1
+  bounce: 0
+  useGravity: 1
+  gravityForce: 0.0444
+  recoil: 0
+  follow: 0
+  rangeFollow: 0
+  mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  material: {fileID: -8771166627424403242, guid: 2a76942beced09048b48530e346de378,
+    type: 3}
+  trail: {fileID: 7554855475696182539, guid: bbe88d4908d558f4798ce959c5d54c31, type: 3}
+  trailMaterial: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  hitRadio: 0
+  sound: {fileID: 8300000, guid: 67282ac0569f9fe4485402684beb3da0, type: 3}

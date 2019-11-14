@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ExitRoom
+  - ExitHall
+  - Hall
+  - Room
+  - bullet
+  - enemy1
+  - WinOrb
+  - Rev
+  - Ra
+  - enemy2
+  - Res
+  - Spike
+  - BossRoom
+  - ArmBoss
+  - SpawnRobot01
+  - SpawnRobot02
+  - Tommy
+  - Frank
+  - SpawnRobot03
+  - enemy3
+  - TreasureRoom
+  - PreBossRoom
+  - Blas
+  - Portal
+  - RevNorm
+  - Desert
+  - Glock
+  - Gatling
+  - M1
+  - Ray
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - VirtualRoom
+  - Room
+  - Walls
+  - DoorSystem
+  - Obstacle
+  - Enemies
+  - Player
+  - Bullets
+  - EnemyBullets
+  - Minimap
+  - HitBoxPlayer
+  - Items
+  - Trampas
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

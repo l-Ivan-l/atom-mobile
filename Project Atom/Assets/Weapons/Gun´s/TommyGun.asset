@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28855d42158f794b81ef26c8926c7b1, type: 3}
+  m_Name: TommyGun
+  m_EditorClassIdentifier: 
+  gunName: TommyGun
+  description: aasadd
+  fireRate: 0.2
+  "tama\xF1oCartucho": 15
+  tiempoRecarga: 3
+  tiempoCargaTiro: 0
+  rechargeSound: {fileID: 8300000, guid: 49b38abb9ce408946846afe229cded02, type: 3}
+  volume: 1
+  mesh: {fileID: -2032144910040496418, guid: 8c6d5e70357ee7a4da04ff351514bed6, type: 3}
+  material: {fileID: 2100000, guid: c0f07f48bc3e83d408c9981de8da77dc, type: 2}

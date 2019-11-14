@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28855d42158f794b81ef26c8926c7b1, type: 3}
+  m_Name: RevolverNorm
+  m_EditorClassIdentifier: 
+  gunName: RevolverNorm
+  description: asadas
+  fireRate: 0.6
+  "tama\xF1oCartucho": 6
+  tiempoRecarga: 1.5
+  tiempoCargaTiro: 0
+  rechargeSound: {fileID: 8300000, guid: 7cab2922d4b490b4482220f0e8f94188, type: 3}
+  volume: 0
+  mesh: {fileID: 3286134450437236697, guid: b58e91b23565a3a42b5eeaedc5dc1a2a, type: 3}
+  material: {fileID: 2100000, guid: 898b6808f1132b946a458a16fbdd70d1, type: 2}

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6612182905792777303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6612182905792777296}
+  - component: {fileID: 6612182905792777297}
+  m_Layer: 0
+  m_Name: DungeonGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6612182905792777296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6612182905792777303}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6612182905792777297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6612182905792777303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58e1dffc7ddf474bb1eb3bcae26d724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initRoomPrefab: {fileID: 2030494006221980903, guid: a7d07080481c9a34e91dcb2fd7ba4df6,
+    type: 3}
+  roomPrefabs:
+  - {fileID: 6374250782532175660, guid: 510b6f9a98f958e4a9e739cbdf90c2c4, type: 3}
+  - {fileID: 1464692419803137391, guid: 6b8c2066a03dda044b199b2967742544, type: 3}
+  - {fileID: 5451051197385572586, guid: 12fcd525d861e904ca4899a6e29ef304, type: 3}
+  - {fileID: 6596063939951134585, guid: 6433ae42e5c86534993c126d8e286074, type: 3}
+  - {fileID: 8557920052358610415, guid: d63dffc1ee397b449b15dcdc268353ec, type: 3}
+  - {fileID: 2438040626862076210, guid: da65dacf97a5df046987afe4e1cea731, type: 3}
+  - {fileID: 579282560549543382, guid: 7a6cff60de58136439c61c1505a97cc9, type: 3}
+  - {fileID: 6040468746041411008, guid: 493d4bf587402b34695f53d9106fdc71, type: 3}
+  - {fileID: 6646421409307648585, guid: 565a4a1287839ae4fba0ca7902f024f0, type: 3}
+  - {fileID: 7645666804047136582, guid: 2f1f540215e730b428f7fef7711c049d, type: 3}
+  - {fileID: 6565679999965511235, guid: 2bb42a2a0b8f3ab429e02376ce4bedbc, type: 3}
+  - {fileID: 7314237750512676216, guid: 7d8d6bec9d90c724ea643c9fcb563938, type: 3}
+  preBossRoom: {fileID: 6303070582700148824, guid: 6a7be5d966d31af4e913ac0e3b0e666c,
+    type: 3}
+  bossRoom: {fileID: 6205523574221335360, guid: 124af5b56a445084f8fba4e34bb7f738,
+    type: 3}
+  treasureRoom: {fileID: 4158840379887127839, guid: 281b7f480d5ec144e87e6fb2cb392417,
+    type: 3}
+  hallPrefabs:
+  - {fileID: 812320052373471621, guid: 5a74a4de7bbf3114597192ee85f9bbee, type: 3}
+  - {fileID: 6044317611129263819, guid: 89c2f643623b736429f75d18ea563fca, type: 3}
+  - {fileID: 7898930239039233062, guid: 061feb8723e675342afadfc561b79a7c, type: 3}
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  loadingScreen: {fileID: 0}
+  hud: {fileID: 0}

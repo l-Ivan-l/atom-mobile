@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28855d42158f794b81ef26c8926c7b1, type: 3}
+  m_Name: Blaster
+  m_EditorClassIdentifier: 
+  gunName: Blaster
+  description: asadas
+  fireRate: 0.1
+  "tama\xF1oCartucho": 3
+  tiempoRecarga: 0.8
+  tiempoCargaTiro: 0
+  rechargeSound: {fileID: 8300000, guid: f45b135ca0b8e2f4bb8521e862fbb7c8, type: 3}
+  volume: 0.5
+  mesh: {fileID: -637040854594224132, guid: 61066c381df27bf48ad08a265fad6e70, type: 3}
+  material: {fileID: 2100000, guid: e7e1d9f078ac8af488da9912c5cbf085, type: 2}

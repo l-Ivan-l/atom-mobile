@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a1585c4c01389498a0a693bd89345b, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  weponName: test
+  description: kdjfhjskdfn
+  damage: 4
+  knockback: 20
+  StartTimeBtwAtack: 1
+  posCollision: {x: 0, y: 1, z: 0.88}
+  atackRange: {x: 1.2, y: 0.5, z: 2}
+  mesh: {fileID: 2724941401400147082, guid: ee078bf469f66994bbb26b736cece5cf, type: 3}
+  material: {fileID: -8771166627424403242, guid: 88e18b4c23dd5734c8ca162778eab1b0,
+    type: 3}

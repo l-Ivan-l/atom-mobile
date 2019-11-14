@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0603055b3613404ba3ab0796ff344a0, type: 3}
+  m_Name: GlockBullet
+  m_EditorClassIdentifier: 
+  bulletName: GlockBullet
+  enemyBullet: 0
+  speed: 20
+  upForce: 0
+  knockback: 10
+  damage: 18
+  lifeTime: 0.5
+  bounce: 0
+  useGravity: 0
+  gravityForce: 0
+  recoil: 0.1
+  follow: 0
+  rangeFollow: 0
+  mesh: {fileID: -8736923667508067185, guid: efa4855d2ea19c348a7246a2cb0ab13f, type: 3}
+  material: {fileID: 2100000, guid: 9e961712385f2fa48857a4dcda5b428d, type: 2}
+  trail: {fileID: 2604311431078759027, guid: bf66114803fcdb44d93d02db79f9008b, type: 3}
+  trailMaterial: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  hitRadio: 0.2
+  sound: {fileID: 8300000, guid: 488e7f5808404ce44b935d4a7de601e0, type: 3}

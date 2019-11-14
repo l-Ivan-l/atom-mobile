@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0603055b3613404ba3ab0796ff344a0, type: 3}
+  m_Name: rayBullet
+  m_EditorClassIdentifier: 
+  bulletName: rayBullet
+  enemyBullet: 0
+  speed: 10
+  upForce: 0
+  knockback: 50
+  damage: 33
+  lifeTime: 1
+  bounce: 0
+  useGravity: 0
+  gravityForce: 0
+  recoil: 0
+  follow: 0
+  rangeFollow: 0
+  mesh: {fileID: -3661998464933909226, guid: 20dd7d6b7b66fb44eba2ed1e838be7b5, type: 3}
+  material: {fileID: 2100000, guid: f8c2ae587bd7bee4492df4add7638b2a, type: 2}
+  trail: {fileID: 7290197249387915411, guid: 6b86cfdb2ae009e4181140ef356a4696, type: 3}
+  trailMaterial: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  hitRadio: 0.4
+  sound: {fileID: 8300000, guid: 5b3dd4419fe691549b72a84cfe103a7b, type: 3}
+  efecto: {fileID: 2645898646532758238, guid: 37bf4b23d3ba871429cb007111f4b369, type: 3}
+  particle: {fileID: 2645898646532758235, guid: 37bf4b23d3ba871429cb007111f4b369,
+    type: 3}
