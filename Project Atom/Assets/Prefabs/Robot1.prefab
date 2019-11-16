@@ -543,7 +543,7 @@ MonoBehaviour:
   rigid: {fileID: 2355360890315142835}
   anim: {fileID: 8682577626605726168}
   hurtEffect: {fileID: 6675813552488633796}
-  life: 150
+  life: 100
   die: 0
   speed: 2
   dropController: {fileID: 0}
@@ -1690,11 +1690,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1654146631056098466}
     m_Modifications:
-    - target: {fileID: 155583874114509195, guid: 2ed5304cbcfe09941b86686d759d1673,
-        type: 3}
-      propertyPath: m_Name
-      value: Robot01HitParticles
-      objectReference: {fileID: 0}
     - target: {fileID: 155583874114509192, guid: 2ed5304cbcfe09941b86686d759d1673,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1749,6 +1744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 155583874114509195, guid: 2ed5304cbcfe09941b86686d759d1673,
+        type: 3}
+      propertyPath: m_Name
+      value: Robot01HitParticles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ed5304cbcfe09941b86686d759d1673, type: 3}

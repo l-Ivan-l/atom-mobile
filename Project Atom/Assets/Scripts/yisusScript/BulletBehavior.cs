@@ -73,6 +73,10 @@ public class BulletBehavior : MonoBehaviour
             collision.gameObject.GetComponent<IDamageable>().Hurt(bullet.damage);
             collision.gameObject.GetComponent<IDamageable>().EnableKnockback(direction, 5f, bullet.knockback);
         }
+        if(collision.gameObject.GetComponent<IAlteredEffects>() != null)
+        {
+            BulletPoisoned(collision);
+        }
         /*Knockback(collision);*/
         if(!bullet.bounce) DisableBullet();
     }
@@ -193,6 +197,14 @@ public class BulletBehavior : MonoBehaviour
         pullController.iPullParticles++;
         if (pullController.iPullParticles >= pullController.numberOfParticles)
             pullController.iPullParticles = 0;
+    }
+
+    //-----------------AlteredEffects------------------------------------
+    void BulletPoisoned(Collision collision)
+    {
+        int probability = Random.Range(0, 101);
+        if(probability <= 20)
+            collision.gameObject.GetComponent<IAlteredEffects>().Poisoned(bullet.damage * 0.15f, 10);
     }
     private void OnDrawGizmos()
     {
