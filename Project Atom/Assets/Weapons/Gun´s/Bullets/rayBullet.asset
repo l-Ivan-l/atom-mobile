@@ -25,12 +25,12 @@ MonoBehaviour:
   recoil: 0
   follow: 0
   rangeFollow: 0
+  bulletPoisoned: 1
+  poisonMaterial: {fileID: 2100000, guid: 6115314900ec86b408d7ec6ac34c0ab8, type: 2}
+  poisonPorcentage: 100
   mesh: {fileID: -3661998464933909226, guid: 20dd7d6b7b66fb44eba2ed1e838be7b5, type: 3}
   material: {fileID: 2100000, guid: f8c2ae587bd7bee4492df4add7638b2a, type: 2}
   trail: {fileID: 7290197249387915411, guid: 6b86cfdb2ae009e4181140ef356a4696, type: 3}
   trailMaterial: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   hitRadio: 0.4
   sound: {fileID: 8300000, guid: 5b3dd4419fe691549b72a84cfe103a7b, type: 3}
-  efecto: {fileID: 2645898646532758238, guid: 37bf4b23d3ba871429cb007111f4b369, type: 3}
-  particle: {fileID: 2645898646532758235, guid: 37bf4b23d3ba871429cb007111f4b369,
-    type: 3}

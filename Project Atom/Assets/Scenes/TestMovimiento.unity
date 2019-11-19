@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: 6844df8c47fbc424ba78b3056da3c52f,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -151,18 +151,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &12658526 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
-    type: 3}
-  m_PrefabInstance: {fileID: 1993723446}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 927d0dfa261ef0d40bf17034f6ecfe07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &83218464 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3852272423646400584, guid: 24018da8b5c0d3243b72a59b2b51909c,
@@ -330,6 +318,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1103044586, guid: cbb97dbe33275ee4cab1f73f088bc1ac, type: 3}
+      propertyPath: life
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbb97dbe33275ee4cab1f73f088bc1ac, type: 3}
 --- !u!1 &462727467
@@ -451,7 +443,7 @@ PrefabInstance:
     - target: {fileID: 1337061587801974539, guid: 28daeba15a0916944831a6d58b49e9c3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1337061587801974543, guid: 28daeba15a0916944831a6d58b49e9c3,
         type: 3}
@@ -5713,7 +5705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacd466711006554f879e55cc0d1c745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wepon: {fileID: 12658526}
+  wepon: {fileID: 0}
   playerLife: {fileID: 788496114}
   weaponHUD: {fileID: 83218464}
   FillCharger: {fileID: 1208160558}
@@ -6096,6 +6088,26 @@ PrefabInstance:
     - target: {fileID: 2548984768437247699, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 728081881}
+    - target: {fileID: 6236437632245741237, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 728081881}
+    - target: {fileID: 6236437632245741237, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

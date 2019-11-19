@@ -19,6 +19,11 @@ public class Bullet : ScriptableObject
     public bool follow;
     public float rangeFollow;
 
+    [Header("Altered Effects")]
+    public bool bulletPoisoned;
+    public Material poisonMaterial;
+    [Range(0,100)]public float poisonPorcentage;
+
     public Mesh mesh;
     public Material material;
     public TrailRenderer trail;

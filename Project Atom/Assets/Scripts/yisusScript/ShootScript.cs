@@ -8,6 +8,7 @@ public class ShootScript : MonoBehaviour
     [Header("Disparo")]
    // private int numActualWeapon;
     private Gun ActualWeapon;
+    public GameObject weponAppearance;
     public Joystick JoystickShoot;
     public Transform firePoint;
     public GameObject bullet;
@@ -138,8 +139,8 @@ public class ShootScript : MonoBehaviour
 
     void WeaponAspect()
     {
-        gameObject.GetComponent<MeshFilter>().mesh = ActualWeapon.mesh;
-        gameObject.GetComponent<MeshRenderer>().material = ActualWeapon.material;
+        weponAppearance.GetComponent<MeshFilter>().mesh = ActualWeapon.mesh;
+        weponAppearance.GetComponent<MeshRenderer>().material = ActualWeapon.material;
     }
 
     /*void BarraCargaPosition()
@@ -184,6 +185,11 @@ public class ShootScript : MonoBehaviour
             activeBullets = Weapons[Singleton.Instance.ActualWeapon].tamañoCartucho;
             velRecarga = 0;
             ibullet = 0;
+            for (int i = 0; i < Bullets.Capacity; i++)
+            {
+                Bullets[i].GetComponent<BulletBehavior>().SeleccionarBala();
+                Bullets[i].GetComponent<BulletBehavior>().BulletAspect();
+            }
         }
     }
 }
