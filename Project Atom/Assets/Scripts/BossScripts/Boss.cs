@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour
 {
   protected float bossLife;
   protected float maxBossLife;
-  protected int bossPhase;
+  public int bossPhase;
   protected Animator bossAnim;
   protected float secondPhasePercentage;
   protected float thirdPhasePercentage;
@@ -19,13 +19,13 @@ public class Boss : MonoBehaviour
 
   public AudioClip bossMusic;
 
-  protected void BossPhaseState()
+  public void BossPhaseState(float _bossLife, float _secondPhaseLife, float _thirdPhaseLife)
   {
-    if(bossLife <= secondPhaseLife && bossLife > thirdPhaseLife) {
+    if(_bossLife <= _secondPhaseLife && _bossLife > _thirdPhaseLife) {
       bossPhase = 2;
-    } else if(bossLife <= thirdPhaseLife && bossLife > 0f) {
+    } else if(_bossLife <= _thirdPhaseLife && _bossLife > 0f) {
       bossPhase = 3;
-    } else if(bossLife <= 0f) {
+    } else if(_bossLife <= 0f) {
       bossPhase = 4;
       StartCoroutine(WinLevel(3f));
     }

@@ -90,7 +90,7 @@ public class PCBoss : Boss
     // Update is called once per frame
     void Update()
     {
-      BossPhaseState();
+      BossPhaseState(secondPhaseLife, bossLife, thirdPhaseLife);
       PCStateMachine();
       if(phasesStarted) {
         SpikesBehaviour();
