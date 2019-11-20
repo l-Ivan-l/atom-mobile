@@ -58,7 +58,7 @@ public class ShootScript : MonoBehaviour
             ShootPlayer();
             WeaponAspect();
         }
-        ChangeWepon();
+        //ChangeWepon();
 
         Debug.Log("ArmaActual: " + Singleton.Instance.ActualWeapon);
     }
@@ -178,18 +178,15 @@ public class ShootScript : MonoBehaviour
         ActualWeapon = Weapons[Singleton.Instance.ActualWeapon];
     }
 
-    void ChangeWepon()
+    public void ChangeWepon()
     {
-        if(Singleton.Instance.ChangeWepon)
+        activeBullets = Weapons[Singleton.Instance.ActualWeapon].tamañoCartucho;
+        velRecarga = 0;
+        ibullet = 0;
+        for (int i = 0; i < Bullets.Count; i++)
         {
-            activeBullets = Weapons[Singleton.Instance.ActualWeapon].tamañoCartucho;
-            velRecarga = 0;
-            ibullet = 0;
-            for (int i = 0; i < Bullets.Capacity; i++)
-            {
-                Bullets[i].GetComponent<BulletBehavior>().SeleccionarBala();
-                Bullets[i].GetComponent<BulletBehavior>().BulletAspect();
-            }
+            Bullets[i].GetComponent<BulletBehavior>().SeleccionarBala();
+            Bullets[i].GetComponent<BulletBehavior>().BulletAspect();
         }
     }
 }

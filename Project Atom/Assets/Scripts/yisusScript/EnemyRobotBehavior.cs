@@ -158,9 +158,13 @@ public class EnemyRobotBehavior : Enemy,IDamageable,IAlteredEffects
         while(iterator < times)
         {
             life -= damage;
+            enemyShape.material = poisonedMaterial;
             Debug.Log("POISONED!!!");
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.4f);
+            enemyShape.material = standarMaterial;
+            yield return new WaitForSeconds(0.2f);
             iterator++;
         }
+        enemyShape.material = standarMaterial;
     }
 }

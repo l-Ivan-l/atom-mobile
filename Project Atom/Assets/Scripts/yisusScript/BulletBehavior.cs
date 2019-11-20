@@ -21,6 +21,7 @@ public class BulletBehavior : MonoBehaviour
     public List<Bullet> actualBullet;
     PullController pullController;
 
+    int probability;
     private void Awake()
     {
         
@@ -74,9 +75,10 @@ public class BulletBehavior : MonoBehaviour
             collision.gameObject.GetComponent<IDamageable>().Hurt(bullet.damage);
             collision.gameObject.GetComponent<IDamageable>().EnableKnockback(direction, 5f, bullet.knockback);
         }
-        if(collision.gameObject.GetComponent<IAlteredEffects>() != null)
+        if (collision.gameObject.GetComponent<IAlteredEffects>() != null)
         {
-            BulletPoisoned(collision);
+            if (BulletPoisoned())
+                collision.gameObject.GetComponent<IAlteredEffects>().Poisoned(bullet.damage * 0.10f, 5);
         }
         /*Knockback(collision);*/
         if(!bullet.bounce) DisableBullet();
@@ -84,7 +86,11 @@ public class BulletBehavior : MonoBehaviour
 
     IEnumerator EleguirDireccion()
     {
-
+        probability = Random.Range(0, 101);
+        if(BulletPoisoned())
+        {
+            gameObject.GetComponent<MeshRenderer>().material = bullet.poisonMaterial;
+        }
         Recoil();
         //particle.Play();
         lifeTime = bullet.lifeTime;
@@ -163,7 +169,7 @@ public class BulletBehavior : MonoBehaviour
         gameObject.GetComponent<TrailRenderer>().enabled = false;
         //gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.transform.position = shootPoint.position;
-       // gameObject.GetComponent<MeshRenderer>().material = bullet.material;
+        gameObject.GetComponent<MeshRenderer>().material = bullet.material;
         rigid.velocity = Vector3.zero;
         lifeTime = bullet.lifeTime;
         gameObject.SetActive(false);
@@ -203,20 +209,21 @@ public class BulletBehavior : MonoBehaviour
     }
 
     //-----------------AlteredEffects------------------------------------
-    void BulletPoisoned(Collision collision)
+    bool BulletPoisoned()
     {
         if(bullet.bulletPoisoned)
         {
-            int probability = Random.Range(0, 101);
+            
             if (probability <= bullet.poisonPorcentage)
             {
-                gameObject.GetComponent<MeshRenderer>().material = bullet.poisonMaterial;
-                collision.gameObject.GetComponent<IAlteredEffects>().Poisoned(bullet.damage * 0.15f, 10);
+                return true;
             }
                 
         }
+        return false;
     }
-        
+    
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

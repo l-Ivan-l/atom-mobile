@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //
-public class EnemyFlyBehavior : Enemy,IDamageable
+public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects
 {
     [Header("Movement")]
     private Vector3 initialVelocity;
@@ -119,6 +119,28 @@ public class EnemyFlyBehavior : Enemy,IDamageable
         hurtEffect.Play();
         life -= Damage;
     }
-    //Temporal
-    
+    // AlteredEffects 
+
+    void IAlteredEffects.Poisoned(float damage, int times)
+    {
+        StartCoroutine(CoPoisoned(damage, times));
+    }
+
+    //---------------Coroutines AlteredEffects-------------------
+    IEnumerator CoPoisoned(float damage, int times)
+    {
+        int iterator = 0;
+
+        while (iterator < times)
+        {
+            life -= damage;
+            enemyShape.material = poisonedMaterial;
+            Debug.Log("POISONED!!!");
+            yield return new WaitForSeconds(0.4f);
+            enemyShape.material = standarMaterial;
+            yield return new WaitForSeconds(0.2f);
+            iterator++;
+        }
+        enemyShape.material = standarMaterial;
+    }
 }

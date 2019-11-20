@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
-public class EnemyShootBehavior : Enemy, IDamageable
+public class EnemyShootBehavior : Enemy, IDamageable,IAlteredEffects
 {
     private Transform target;
     [SerializeField]
@@ -148,5 +148,30 @@ public class EnemyShootBehavior : Enemy, IDamageable
         hurtEffect.Play();
         life -= Damage;
         if(!die)anim.Play("Damage");
+    }
+
+    // AlteredEffects 
+
+    void IAlteredEffects.Poisoned(float damage, int times)
+    {
+        StartCoroutine(CoPoisoned(damage, times));
+    }
+
+    //---------------Coroutines AlteredEffects-------------------
+    IEnumerator CoPoisoned(float damage, int times)
+    {
+        int iterator = 0;
+
+        while (iterator < times)
+        {
+            life -= damage;
+            enemyShape.material = poisonedMaterial;
+            Debug.Log("POISONED!!!");
+            yield return new WaitForSeconds(0.4f);
+            enemyShape.material = standarMaterial;
+            yield return new WaitForSeconds(0.2f);
+            iterator++;
+        }
+        enemyShape.material = standarMaterial;
     }
 }
