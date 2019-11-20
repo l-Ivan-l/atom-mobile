@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //
-public class EnemyFlyBehavior : Enemy,IDamageable
+public class EnemyFlyBehavior : Enemy,IDamageable, IFlyEnemy
 {
     [Header("Movement")]
     private Vector3 initialVelocity;
@@ -17,6 +17,9 @@ public class EnemyFlyBehavior : Enemy,IDamageable
     [SerializeField] private ParticleSystem particle;
     [SerializeField] private SphereCollider sphereCol;
     [SerializeField] private CapsuleCollider capsuleCol;
+
+    public IFlyEnemy FlyEnemy;
+  
 
 
     // Start is called before the first frame update
@@ -87,12 +90,13 @@ public class EnemyFlyBehavior : Enemy,IDamageable
         if (life <= 0)
         {
 
-            StartCoroutine(MorirCo());
+            StartCoroutine(FlyEnemy.MorirCo());
 
         }
+       
     }
 
-    IEnumerator MorirCo()
+    public IEnumerator MorirCo()
     {
         
         gameObject.layer = 1;
@@ -121,4 +125,9 @@ public class EnemyFlyBehavior : Enemy,IDamageable
     }
     //Temporal
     
+public void Die2(int life)
+{
+    Die();
+}
+   
 }
