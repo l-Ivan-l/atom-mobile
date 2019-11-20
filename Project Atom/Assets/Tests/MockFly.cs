@@ -8,7 +8,7 @@ public class MockFly : IFlyEnemy
     public bool flyEnemyDead;
     public IEnumerator MorirCo()
     {
-        flyEnemyDead=false;
+        flyEnemyDead=true;
          yield return new WaitForSeconds(1f);
     } 
 }

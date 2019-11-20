@@ -125,8 +125,9 @@ public class EnemyFlyBehavior : Enemy,IDamageable, IFlyEnemy
     }
     //Temporal
     
-public void Die2(int life)
+public void Die2(float life2)
 {
+    life=life2;
     Die();
 }
    

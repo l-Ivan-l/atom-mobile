@@ -22,7 +22,7 @@ namespace Tests
           enemyInstance.Die2(life);
 
           //Assert
-          Assert.AreEqual(false,enemyMock.flyEnemyDead);
+          Assert.AreEqual(true,enemyMock.flyEnemyDead);
 
 
       }
