@@ -19,12 +19,12 @@ public class BulletBehavior : MonoBehaviour
     private float lifeBullet;
 
     public List<Bullet> actualBullet;
-    PullController pullController;
+    GameController pullController;
 
     private void Awake()
     {
         
-        pullController = GameObject.Find("GameController").GetComponent<PullController>();
+        pullController = GameObject.Find("GameController").GetComponent<GameController>();
         audioSource = GameObject.Find("GameController").GetComponent<AudioSource>();
         rigid = gameObject.GetComponent<Rigidbody>();
         joy = GameObject.Find("JoyShoot").GetComponent<Joystick>();

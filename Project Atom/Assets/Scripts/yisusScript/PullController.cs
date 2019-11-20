@@ -2,24 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PullController : MonoBehaviour
+public class PullController 
 {
-    public GameObject Particles;
-    public float numberOfParticles;
-    public int iPullParticles = 0;
-    public List<GameObject> pullParticles;
-    void Start()
-    {
-        pullParticles = new List<GameObject>();
-        CreateParticlePull();
-    }
+    Pull Pull = new Pull();
+   
 
-    void CreateParticlePull()
+    public void CreatePull(List<GameObject> pullList, GameObject _object, int numObjects )
     {
-        for (int j = 0; j < numberOfParticles; j++)
+
+        for (int j = 0; j < numObjects; j++)
         {
-            GameObject particle = Instantiate(Particles);
-            pullParticles.Add(particle);
+            Debug.Log("AddElemten " + j);
+            Pull.AddElementToThePull(pullList, _object);
+            
         }
     }
 }
