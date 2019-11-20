@@ -176,18 +176,15 @@ public class PlayerMovement : MonoBehaviour, IDamageable
         {
 
 
-            if (Singleton.Instance.WeaponType == 1)
+            if (Singleton.Instance.ActualWeapon == 2)
             {
-                if (Singleton.Instance.ActualWeapon == 2)
-                {
-                    //Ra animation
-                    animPlayer.Play("Ra's");
-                }
-                else
-                {
-                    //shoot animation
-                    animPlayer.Play("Shooting");
-                }
+                //Ra animation
+                animPlayer.Play("Ra's");
+            }
+            else
+            {
+                //shoot animation
+                animPlayer.Play("Shooting");
             }
 
 
