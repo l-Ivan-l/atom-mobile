@@ -19,4 +19,7 @@ public static class MyTags
   public static string SPAWN_02_TAG = "SpawnRobot02";
   public static string SPAWN_03_TAG = "SpawnRobot03";
   public static string PORTAL_TAG = "Portal";
+  public static string MINIMAP_TAG = "Minimap";
+  public static string PCBOSS_TAG = "PCBoss";
+  public static string DOOR_SENSOR_TAG = "DoorSensor";
 }//class

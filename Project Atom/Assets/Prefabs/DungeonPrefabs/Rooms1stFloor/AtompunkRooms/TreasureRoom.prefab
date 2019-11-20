@@ -711,6 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 6698976923751267003}
+  thisRoomTag: TreasureRoom
 --- !u!1001 &1294065802954509977
 PrefabInstance:
   m_ObjectHideFlags: 0

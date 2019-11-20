@@ -31,7 +31,7 @@ public class Module : MonoBehaviour
   {
     for(int i = 0; i < this.transform.childCount; i++)
     {
-      this.transform.GetChild(i).gameObject.SetActive(false);
+      this.transform.GetChild(i).gameObject.SetActive(true);
     }
   }
 
@@ -39,7 +39,7 @@ public class Module : MonoBehaviour
   {
     for(int i = 0; i < this.transform.childCount; i++)
     {
-      this.transform.GetChild(i).gameObject.SetActive(true);
+      this.transform.GetChild(i).gameObject.SetActive(false);
     }
   }
 

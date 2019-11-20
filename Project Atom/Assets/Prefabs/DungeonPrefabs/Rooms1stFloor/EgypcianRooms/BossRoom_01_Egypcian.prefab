@@ -684,6 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 7097254062190204124}
+  thisRoomTag: BossRoom
 --- !u!1 &7568665850495138612
 GameObject:
   m_ObjectHideFlags: 0

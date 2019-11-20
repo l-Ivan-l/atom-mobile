@@ -7,10 +7,9 @@ public class DoorSystem : MonoBehaviour
   private Collider[] doorSensors;
   private RoomScript room;
   private EnemiesGenerator enemiesGen;
-  private bool doorsClosed;
-  //private GameObject Minimap;
   private Minimap minimapScript;
-
+  private bool doorsClosed;
+  // Start is called before the first frame update
   void Start()
   {
     room = this.gameObject.transform.parent.gameObject.GetComponent<RoomScript>();
@@ -48,14 +47,7 @@ public class DoorSystem : MonoBehaviour
     }
   }
 
-  void ActivateEnemies()
-  {
-    for(int i = 0; i < enemiesGen.EnemiesInRoom.Count; i++) {
-      enemiesGen.EnemiesInRoom[i].SetActive(true);
-    }
-  }
-
-  void OpenDoors()
+  public void OpenDoors()
   {
     for(int i = 0; i < room.DoorsInRoom.Count; i++) {
       room.DoorsInRoom[i].transform.GetChild(0).GetComponent<Animator>().SetTrigger("OpenDoor");
@@ -68,6 +60,13 @@ public class DoorSystem : MonoBehaviour
     //Minimap.SetActive(true);}
     minimapScript.CanInteract = true;
     this.gameObject.SetActive(false);
+  }
+
+  public void ActivateEnemies()
+  {
+    for(int i = 0; i < enemiesGen.EnemiesInRoom.Count; i++) {
+      enemiesGen.EnemiesInRoom[i].SetActive(true);
+    }
   }
 
 }//class

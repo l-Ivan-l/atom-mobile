@@ -302,6 +302,16 @@ PrefabInstance:
       propertyPath: joyShoot
       value: 
       objectReference: {fileID: 1523285451}
+    - target: {fileID: 3947396513009567783, guid: c83bf5d862ba71e409db52d0a02cbe29,
+        type: 3}
+      propertyPath: height
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947396513009567783, guid: c83bf5d862ba71e409db52d0a02cbe29,
+        type: 3}
+      propertyPath: distance
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3947396513009567781, guid: c83bf5d862ba71e409db52d0a02cbe29,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
