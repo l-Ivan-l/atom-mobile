@@ -33,6 +33,11 @@ public class EnemyRobotBehavior : Enemy,IDamageable
     void FixedUpdate()
     {
         transform.LookAt(target);
+        EnemyState(life);
+
+    }
+    public void EnemyState(float life)
+    {
         if (life <= 0)
         {
             Die();
@@ -41,9 +46,7 @@ public class EnemyRobotBehavior : Enemy,IDamageable
         {
             Move();
         }
-
     }
-
     public override void Move()
     {
         if (canMove)

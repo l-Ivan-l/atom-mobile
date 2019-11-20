@@ -5676,8 +5676,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797271820}
-  - component: {fileID: 1797271819}
   - component: {fileID: 1797271823}
+  - component: {fileID: 1797271819}
   - component: {fileID: 1797271821}
   - component: {fileID: 1797271822}
   m_Layer: 0
@@ -5714,6 +5714,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5b803fbeea6233042a07e048f08b061f, type: 3}
   Bullets: []
   animChargeShootBar: {fileID: 77509562169848855}
+  anim_Life: {fileID: 0}
   bossBar: {fileID: 0}
 --- !u!4 &1797271820
 Transform:
@@ -5850,7 +5851,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1797271818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87757f82c4e54e44a81787b43c5da821, type: 3}
+  m_Script: {fileID: 11500000, guid: af6df25bcdef87b4b9903f4c85eb011d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Particles: {fileID: 2645898646532758238, guid: 37bf4b23d3ba871429cb007111f4b369,
