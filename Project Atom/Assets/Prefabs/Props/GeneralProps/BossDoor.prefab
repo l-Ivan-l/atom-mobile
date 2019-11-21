@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8095041965507034446
+--- !u!1 &1227134470669060755
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5047413817130864477}
-  - component: {fileID: 4275889260696237419}
-  - component: {fileID: 7524261308837857682}
-  - component: {fileID: 8095041965507034447}
-  - component: {fileID: 8095041965507034444}
-  - component: {fileID: 1747255939877265683}
+  - component: {fileID: 2836407484506912896}
+  - component: {fileID: 6487425553891852982}
+  - component: {fileID: 665264183617519183}
+  - component: {fileID: 1227134470669060752}
+  - component: {fileID: 8362233507355610474}
+  - component: {fileID: 8812630539501614466}
   m_Layer: 0
-  m_Name: AtomPunkDoor
+  m_Name: BossDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5047413817130864477
+--- !u!4 &2836407484506912896
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095041965507034446}
+  m_GameObject: {fileID: 1227134470669060755}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 3.335041}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4275889260696237419
+--- !u!33 &6487425553891852982
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095041965507034446}
-  m_Mesh: {fileID: -6424663808295089067, guid: da2a2bc0c40f2aa4499a913dc8646a32, type: 3}
---- !u!23 &7524261308837857682
+  m_GameObject: {fileID: 1227134470669060755}
+  m_Mesh: {fileID: -7237651490624786796, guid: 51a3e58491bfee6439abddb4fbec7cea, type: 3}
+--- !u!23 &665264183617519183
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095041965507034446}
+  m_GameObject: {fileID: 1227134470669060755}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ada75fd44f700e42994fa9104685405, type: 2}
+  - {fileID: 2100000, guid: a68f2822456d69747a489a1e40543226, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,47 +81,47 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8095041965507034447
+--- !u!65 &1227134470669060752
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095041965507034446}
+  m_GameObject: {fileID: 1227134470669060755}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 0.225}
-  m_Center: {x: -0.5, y: 0, z: 0}
---- !u!54 &8095041965507034444
+  m_Center: {x: 0.004000008, y: -0.0017408729, z: 10.15}
+--- !u!54 &8362233507355610474
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095041965507034446}
+  m_GameObject: {fileID: 1227134470669060755}
   serializedVersion: 2
   m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!59 &1747255939877265683
+--- !u!59 &8812630539501614466
 HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8095041965507034446}
+  m_GameObject: {fileID: 1227134470669060755}
   m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: -0.02, y: 1, z: 0}
+  m_Anchor: {x: -0.5, y: 1, z: 10.15}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.48, y: 1, z: 3.335041}
+  m_ConnectedAnchor: {x: -0.45, y: 0.9, z: 9.134999}
   m_UseSpring: 1
   m_Spring:
     spring: 2
