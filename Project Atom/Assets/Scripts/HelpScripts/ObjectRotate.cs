@@ -8,7 +8,7 @@ public class ObjectRotate : MonoBehaviour , IRotate
     {
       transform.Rotate(Vector3.up*-velocity*Time.deltaTime);
     }
-    public void RotateObjectLeft(float velocity)
+    public void RotateObjectRight(float velocity)
     {
       transform.Rotate(Vector3.up*velocity*Time.deltaTime);
     }

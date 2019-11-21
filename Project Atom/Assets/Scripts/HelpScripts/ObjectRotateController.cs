@@ -7,10 +7,10 @@ public class ObjectRotateController
   ObjectRotate objectRotate = new ObjectRotate();
   public void RotateObject(float velocity){
     if (velocity < 0) {
-        objectRotate.RotateObjectLeft(velocity);
+        objectRotate.GetComponent<IRotate>().RotateObjectLeft(velocity);
     }
     else if (velocity > 0) {
-        objectRotate.RotateObjectRight(velocity);
+        objectRotate.GetComponent<IRotate>().RotateObjectRight(velocity);
     }
   }
 }
