@@ -965,9 +965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1172103385 stripped
+--- !u!114 &1288944692 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
+  m_CorrespondingSourceObject: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
     type: 3}
   m_PrefabInstance: {fileID: 1372138678}
   m_PrefabAsset: {fileID: 0}
@@ -1092,6 +1092,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 1523285451}
     - target: {fileID: 1617243858, guid: 371093cb97ce6404bb6e605ee3266544, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1673,7 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacd466711006554f879e55cc0d1c745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wepon: {fileID: 1172103385}
+  wepon: {fileID: 1288944692}
   playerLife: {fileID: 1704345199}
   weaponHUD: {fileID: 1972264598}
   FillCharger: {fileID: 281133650}
@@ -2109,6 +2114,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1704345202}
     m_Modifications:
+    - target: {fileID: 2400402985075144690, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Name
+      value: MinimapIcon
+      objectReference: {fileID: 0}
     - target: {fileID: 2400402985075144693, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2173,11 +2183,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2400402985075144690, guid: 5aba95b8e0b8242478886650689f4588,
-        type: 3}
-      propertyPath: m_Name
-      value: MinimapIcon
       objectReference: {fileID: 0}
     - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
