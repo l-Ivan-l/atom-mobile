@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour, IDamageable
+public class PlayerMovement : MonoBehaviour, IDamageable, IDash
 {
     //Pasar las variables de los joysticks a un controller/singleton
     [Header("Movimiento")]
