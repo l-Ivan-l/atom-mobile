@@ -271,6 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionSize: {x: 3, y: 2, z: 8}
   colliderTransform: {fileID: 7957842078053051121}
+  minimapIcons:
+  - {fileID: 2881137705732013073}
 --- !u!1 &8646693872822169097
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinimapIcon
       objectReference: {fileID: 0}
+    - target: {fileID: 2400402985075144690, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2400402985075144693, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -533,6 +540,12 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aba95b8e0b8242478886650689f4588, type: 3}
+--- !u!1 &2881137705732013073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2400402985075144690, guid: 5aba95b8e0b8242478886650689f4588,
+    type: 3}
+  m_PrefabInstance: {fileID: 483058023088196579}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2881137705732013078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2400402985075144693, guid: 5aba95b8e0b8242478886650689f4588,

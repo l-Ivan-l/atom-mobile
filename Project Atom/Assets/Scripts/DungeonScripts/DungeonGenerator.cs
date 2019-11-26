@@ -338,15 +338,11 @@ public class DungeonGenerator : MonoBehaviour
 
     void DeactivateRooms()
     {
-      for(int i = 0; i < modulesInDungeon.Count; i++) {
-        /*
+      for(int i = 1; i < modulesInDungeon.Count; i++) {
         if(modulesInDungeon[i].CompareTag(MyTags.ROOM_TAG)) {
-          modulesInDungeon[i].GetComponent<RoomScript>().EvaluateConnections();
-          modulesInDungeon[i].GetComponent<RoomScript>().GenerateWalls();
+          Debug.Log("Deactivate module " + i);
+          modulesInDungeon[i].GetComponent<Module>().DeactivateModule();
         }
-        */
-        Debug.Log("Deactivate module " + i);
-        modulesInDungeon[i].GetComponent<Module>().DeactivateModule();
       }
     }
 

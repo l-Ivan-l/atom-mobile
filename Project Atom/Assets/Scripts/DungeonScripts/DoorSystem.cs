@@ -8,7 +8,7 @@ public class DoorSystem : MonoBehaviour
   private RoomScript room;
   private EnemiesGenerator enemiesGen;
   private bool doorsClosed;
-  //private GameObject Minimap;
+  private GameObject Minimap;
   private Minimap minimapScript;
 
   void Start()
@@ -29,15 +29,16 @@ public class DoorSystem : MonoBehaviour
   void OnTriggerEnter(Collider target)
   {
     if(target.gameObject.CompareTag(MyTags.PLAYER_TAG)) {
-      //Minimap = GameObject.Find("Minimap_Btn");
+      Minimap = GameObject.Find("Minimap_Btn");
       minimapScript = GameObject.Find("MinimapCamera").GetComponent<Minimap>();
       minimapScript.CanInteract = false;
-      //Minimap.SetActive(false);
+      Minimap.GetComponent<Animator>().SetTrigger("MinimapUp");
       //Freeze Player
       Singleton.Instance.StopTime = 0.5f;
       //Close Doors
       for(int i = 0; i < room.DoorsInRoom.Count; i++) {
         room.DoorsInRoom[i].transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("CloseDoor");
+        room.DoorsInRoom[i].transform.GetChild(1).gameObject.SetActive(true);
       }
       //Desactivate sensors
       for (int i = 0; i < doorSensors.Length; i++) {
@@ -65,7 +66,7 @@ public class DoorSystem : MonoBehaviour
       this.transform.parent.GetChild(this.transform.parent.childCount - 1).gameObject.SetActive(true);
       Debug.Log("Portal Activated");
     }
-    //Minimap.SetActive(true);}
+    Minimap.GetComponent<Animator>().SetTrigger("MinimapDown");
     minimapScript.CanInteract = true;
     this.gameObject.SetActive(false);
   }

@@ -5,14 +5,14 @@ using UnityEngine;
 public class SensorScript : MonoBehaviour
 {
     public Animator Door;
-    //private GameObject miniMap;
+    private GameObject miniMap;
     private Minimap minimapScript;
 
     void OnTriggerEnter(Collider target)
     {
       if(target.gameObject.CompareTag(MyTags.PLAYER_TAG) && this.gameObject.transform.parent.transform.parent.gameObject.CompareTag(MyTags.BOSS_ROOM_TAG)) {
-        //miniMap = GameObject.Find("Minimap_Btn");
-        //miniMap.SetActive(false);
+        miniMap = GameObject.Find("Minimap_Btn");
+        miniMap.GetComponent<Animator>().SetTrigger("MinimapUp");
         minimapScript = GameObject.Find("MinimapCamera").GetComponent<Minimap>();
         minimapScript.CanInteract = false;
         this.gameObject.transform.parent.gameObject.GetComponent<PCBoss>().PlayerInRoom = true;
@@ -23,11 +23,14 @@ public class SensorScript : MonoBehaviour
         this.gameObject.GetComponent<Collider>().enabled = false;
         Debug.Log("PLAYER ENTER BOSS ROOM");
       } else if(target.gameObject.CompareTag(MyTags.PLAYER_TAG) && this.gameObject.transform.parent.gameObject.CompareTag(MyTags.TREASURE_ROOM_TAG)) {
+        miniMap = GameObject.Find("Minimap_Btn");
+        miniMap.GetComponent<Animator>().SetTrigger("MinimapUp");
         //Freeze Player
         Singleton.Instance.StopTime = 0.5f;
         //Close Door
         Door.SetTrigger("CloseDoor");
         this.gameObject.GetComponent<Collider>().enabled = false;
+        Debug.Log("PLAYER ENTER TREASURE ROOM");
       }
     }
 
