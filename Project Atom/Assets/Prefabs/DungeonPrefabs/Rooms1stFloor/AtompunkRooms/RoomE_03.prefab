@@ -398,7 +398,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 1841dd93acec2dc42b2022a143732dfc, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 80c57c92b42980b4faf744963e93508f, type: 2}
 --- !u!114 &7314237750512676218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,16 +416,8 @@ MonoBehaviour:
   minimapIcons:
   - {fileID: 7480945376079439311}
   - {fileID: 8175367738572954463}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 2158558335341745851}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 5073796527963871161}
-  - {fileID: 0}
   - {fileID: 378348334569439802}
   nWalls: 4
   connectors:
@@ -1886,6 +1878,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 762752d920c513341a431db9d7cc40dd,
         type: 3}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aba95b8e0b8242478886650689f4588, type: 3}
 --- !u!4 &378348334569439805 stripped

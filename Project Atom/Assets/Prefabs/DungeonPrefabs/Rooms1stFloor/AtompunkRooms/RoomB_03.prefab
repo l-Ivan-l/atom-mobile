@@ -219,7 +219,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: df2db49e1e9c2104dab5464508c4cd5e, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 9edbed5f328959f418c944bc4e38758a, type: 2}
 --- !u!114 &8780921654644516296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,18 +235,6 @@ MonoBehaviour:
   collisionSize: {x: 13, y: 2, z: 13}
   colliderTransform: {fileID: 2028477422410612405}
   minimapIcons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 859467958069286380}
   nWalls: 3
   connectors:
@@ -1565,6 +1553,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: db1e141f74b73f142843f26584cf13dd,
         type: 3}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aba95b8e0b8242478886650689f4588, type: 3}
 --- !u!1 &859467958069286380 stripped
@@ -1725,11 +1723,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3866701287040265445, guid: 612ad9563931f87498a9489f1e361b02,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 612ad9563931f87498a9489f1e361b02, type: 3}
@@ -2051,16 +2044,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188870615230282443, guid: d771e78f69424c84db82d1275c449f93,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188870615230282443, guid: d771e78f69424c84db82d1275c449f93,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d771e78f69424c84db82d1275c449f93, type: 3}

@@ -363,7 +363,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 13266dbf0f18e374aa81db4d85aab2d3, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 8c45116847f196847bd0186126d11e5f, type: 2}
 --- !u!114 &7645666804047136580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,9 +379,6 @@ MonoBehaviour:
   collisionSize: {x: 19, y: 2, z: 19}
   colliderTransform: {fileID: 3149182555848334789}
   minimapIcons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1153738261719701314}
   - {fileID: 8551946236835397752}
   - {fileID: 8657992200067845161}
@@ -390,25 +387,16 @@ MonoBehaviour:
   - {fileID: 981262964507152004}
   - {fileID: 486653083953136947}
   - {fileID: 5288401197859754403}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 2114870132153091193}
   - {fileID: 4636828010330502555}
-  - {fileID: 0}
   - {fileID: 4823460488326801129}
   - {fileID: 7030932239840162834}
-  - {fileID: 0}
   - {fileID: 7069409527673141354}
-  - {fileID: 0}
   - {fileID: 4845627101349127832}
-  - {fileID: 0}
   - {fileID: 744420452791588192}
   - {fileID: 7783792463461748924}
-  - {fileID: 0}
   - {fileID: 421368550574844282}
-  - {fileID: 0}
   - {fileID: 9137837399862048721}
-  - {fileID: 0}
   - {fileID: 7519415571779263041}
   - {fileID: 4120661310498567301}
   - {fileID: 2043030764085076968}
@@ -3235,6 +3223,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 762752d920c513341a431db9d7cc40dd,
         type: 3}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aba95b8e0b8242478886650689f4588, type: 3}
 --- !u!4 &2043030764085076975 stripped

@@ -331,7 +331,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 3005fc7fe8840234498596862b9614fa, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 8a979ac17006a3e43a41998e4c2d634f, type: 2}
 --- !u!114 &2355945214812847979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,22 +347,6 @@ MonoBehaviour:
   collisionSize: {x: 13, y: 2, z: 13}
   colliderTransform: {fileID: 3723213278765520433}
   minimapIcons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 348330535250828703}
   nWalls: 4
   connectors:
@@ -1234,6 +1218,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0cd8b1bc3d81f924cb79ca8f28e4a5f7,
         type: 3}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aba95b8e0b8242478886650689f4588, type: 3}
 --- !u!4 &348330535250828696 stripped
