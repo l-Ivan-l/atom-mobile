@@ -14,7 +14,8 @@ public class HUDController : MonoBehaviour
     public Image img_PlayerLife;
     public List<Sprite> Weapons;
     public List<Sprite> Bullets;
-    public Animator animChargeShootBar;
+    public GameObject chargueShootObject;
+    //public Animator animChargeShootBar;
     public Animator anim_Life;
     
     public GameObject bossBar;
@@ -34,15 +35,17 @@ public class HUDController : MonoBehaviour
     {
         if (wepon.Weapons[Singleton.Instance.ActualWeapon].tiempoCargaTiro > 0)
         {
-            animChargeShootBar.SetBool("Show",true);
-            animChargeShootBar.SetBool("Hide", false);
+            //animChargeShootBar.SetBool("Show",true);
+            //animChargeShootBar.SetBool("Hide", false);
+            chargueShootObject.SetActive(true);
             FillChargeShoot.fillAmount = wepon.cargaTiro / wepon.Weapons[Singleton.Instance.ActualWeapon].tiempoCargaTiro;
         }
         else
         {
-            animChargeShootBar.SetBool("Hide", true);
-            animChargeShootBar.SetBool("Show", false);
-            
+            chargueShootObject.SetActive(false);
+            //    animChargeShootBar.SetBool("Hide", true);
+            //    animChargeShootBar.SetBool("Show", false);
+
         }
             
 
@@ -67,6 +70,7 @@ public class HUDController : MonoBehaviour
         anim_Life.SetFloat("animSpeed", 1f);
         
         img_PlayerLife.color = Color.Lerp(RojoMuerte, VerdeAzul, Singleton.Instance.PlayerLife / playerLife.vida);
+        img_PlayerLife.fillAmount = Singleton.Instance.PlayerLife / playerLife.vida;
         float velextra = 1 - Singleton.Instance.PlayerLife / playerLife.vida;
         anim_Life.SetFloat("animSpeed", 1f + velextra);
     }
