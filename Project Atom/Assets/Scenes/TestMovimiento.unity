@@ -6970,6 +6970,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6922740426416645442, guid: b489dc08fb4d03648b918eb739f25d49,
+        type: 3}
+      propertyPath: RageMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e5a70077eddc0a544a22703e8892180f, type: 2}
+    - target: {fileID: 6922740426416645442, guid: b489dc08fb4d03648b918eb739f25d49,
+        type: 3}
+      propertyPath: WhatIsPlayer.m_Bits
+      value: 524288
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922740426416645442, guid: b489dc08fb4d03648b918eb739f25d49,
+        type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724814732971870033, guid: b489dc08fb4d03648b918eb739f25d49,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8676490509880478543, guid: b489dc08fb4d03648b918eb739f25d49,
         type: 3}
       propertyPath: m_Layer
