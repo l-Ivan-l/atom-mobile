@@ -832,6 +832,11 @@ PrefabInstance:
       propertyPath: JoystickShoot
       value: 
       objectReference: {fileID: 1523285451}
+    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2548984768437247699, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_LocalPosition.x

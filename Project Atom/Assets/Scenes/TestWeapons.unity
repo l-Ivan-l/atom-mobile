@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: 6844df8c47fbc424ba78b3056da3c52f,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -213,18 +213,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &12658526 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
-    type: 3}
-  m_PrefabInstance: {fileID: 1993723446}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 927d0dfa261ef0d40bf17034f6ecfe07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!20 &23459150 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3947396513009567781, guid: c83bf5d862ba71e409db52d0a02cbe29,
@@ -1740,9 +1728,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 0}
   anim: {fileID: 0}
+  hurtEffect: {fileID: 0}
   life: 0
   die: 0
   speed: 0
+  enemyShape: {fileID: 0}
+  standarMaterial: {fileID: 0}
+  poisonedMaterial: {fileID: 0}
   dropController: {fileID: 0}
   dest: {x: 0, y: 0, z: 0}
   distance: 0
@@ -6577,7 +6569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacd466711006554f879e55cc0d1c745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wepon: {fileID: 12658526}
+  wepon: {fileID: 0}
   playerLife: {fileID: 0}
   weaponHUD: {fileID: 83218464}
   FillCharger: {fileID: 134863197}
@@ -6598,6 +6590,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 44c2f61a3a27eab47865f4796a0ae879, type: 3}
   Bullets: []
   animChargeShootBar: {fileID: 0}
+  anim_Life: {fileID: 0}
   bossBar: {fileID: 1667768591}
 --- !u!4 &1797271820
 Transform:
@@ -6748,6 +6741,16 @@ PrefabInstance:
       propertyPath: JoystickShoot
       value: 
       objectReference: {fileID: 728081881}
+    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: Joystick
+      value: 
+      objectReference: {fileID: 640343869}
+    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 728081881}
     - target: {fileID: 2548984768437247699, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6803,16 +6806,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
-        type: 3}
-      propertyPath: Joystick
-      value: 
-      objectReference: {fileID: 640343869}
-    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
-        type: 3}
-      propertyPath: JoystickShoot
-      value: 
-      objectReference: {fileID: 728081881}
     - target: {fileID: 4218402714814622896, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_LocalPosition.z
