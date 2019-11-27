@@ -80,4 +80,9 @@ public class HUDController : MonoBehaviour
     {
       bossBar.SetActive(true);
     }
+
+    public void ChangeBossBarText(string _text)
+    {
+      bossBar.gameObject.transform.GetChild(2).GetComponent<Text>().text = _text;
+    }
 }

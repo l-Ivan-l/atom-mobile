@@ -34,6 +34,8 @@ TagManager:
   - Gatling
   - M1
   - Ray
+  - BossRoom02
+  - MeatTrace
   layers:
   - Default
   - TransparentFX
