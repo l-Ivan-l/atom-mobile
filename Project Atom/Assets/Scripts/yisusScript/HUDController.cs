@@ -17,7 +17,7 @@ public class HUDController : MonoBehaviour
     public GameObject chargueShootObject;
     //public Animator animChargeShootBar;
     public Animator anim_Life;
-    
+
     public GameObject bossBar;
 
 
@@ -33,12 +33,14 @@ public class HUDController : MonoBehaviour
 
     void ChargeShoot()
     {
+      Color RojoMuerte = new Color(0.8f, 0.2f, 0.0f);
         if (wepon.Weapons[Singleton.Instance.ActualWeapon].tiempoCargaTiro > 0)
         {
             //animChargeShootBar.SetBool("Show",true);
             //animChargeShootBar.SetBool("Hide", false);
             chargueShootObject.SetActive(true);
             FillChargeShoot.fillAmount = wepon.cargaTiro / wepon.Weapons[Singleton.Instance.ActualWeapon].tiempoCargaTiro;
+            FillChargeShoot.color = Color.Lerp(Color.white, RojoMuerte, wepon.cargaTiro / wepon.Weapons[Singleton.Instance.ActualWeapon].tiempoCargaTiro);
         }
         else
         {
@@ -47,17 +49,17 @@ public class HUDController : MonoBehaviour
             //    animChargeShootBar.SetBool("Show", false);
 
         }
-            
+
 
     }
     void ChargerBar()
     {
         FillCharger.fillAmount = (float)wepon.activeBullets / (float)wepon.Weapons[Singleton.Instance.ActualWeapon].tamañoCartucho;
         if(wepon.activeBullets <= 0)
-        {         
+        {
             FillCharger.fillAmount = wepon.velRecarga / wepon.Weapons[Singleton.Instance.ActualWeapon].tiempoRecarga;
         }
-       
+
     }
     void ActualizarArma()
     {
@@ -68,7 +70,7 @@ public class HUDController : MonoBehaviour
         Color VerdeAzul = new Color(0.25f, 0.87f, 0.58f);
         Color RojoMuerte = new Color(0.8f, 0.2f, 0.0f);
         anim_Life.SetFloat("animSpeed", 1f);
-        
+
         img_PlayerLife.color = Color.Lerp(RojoMuerte, VerdeAzul, Singleton.Instance.PlayerLife / playerLife.vida);
         img_PlayerLife.fillAmount = Singleton.Instance.PlayerLife / playerLife.vida;
         float velextra = 1 - Singleton.Instance.PlayerLife / playerLife.vida;
