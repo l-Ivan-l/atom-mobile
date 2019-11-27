@@ -11,6 +11,7 @@ public static class MyTags
   public static string PLAYER_TAG = "Player";
   public static string BULLET_TAG = "bullet";
   public static string BOSS_ROOM_TAG = "BossRoom";
+  public static string BOSS_02_ROOM_TAG = "BossRoom02";
   public static string PRE_BOSS_ROOM_TAG = "PreBossRoom";
   public static string TREASURE_ROOM_TAG = "TreasureRoom";
   public static string ARM_BOSS_TAG = "ArmBoss";
