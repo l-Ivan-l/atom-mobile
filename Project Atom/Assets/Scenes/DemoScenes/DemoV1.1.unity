@@ -307,14 +307,6 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 3407671
       objectReference: {fileID: 0}
-    - target: {fileID: 242618913, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
-      propertyPath: m_ShowToolkit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 242618913, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 242618918, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
       propertyPath: m_RendererOverrideOption
       value: 0
@@ -322,6 +314,14 @@ PrefabInstance:
     - target: {fileID: 242618918, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
       propertyPath: m_RenderShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 242618913, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
+      propertyPath: m_ShowToolkit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 242618913, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c83bf5d862ba71e409db52d0a02cbe29, type: 3}
@@ -811,6 +811,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 1523285451}
     - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: Joystick
@@ -821,6 +826,11 @@ PrefabInstance:
       propertyPath: JoystickShoot
       value: 
       objectReference: {fileID: 1523285451}
+    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2548984768437247699, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -876,11 +886,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
-        type: 3}
-      propertyPath: JoystickShoot
-      value: 
-      objectReference: {fileID: 1523285451}
     - target: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: JoystickShoot
@@ -978,6 +983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 77509562692207703, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 77509562692207699, guid: 24018da8b5c0d3243b72a59b2b51909c,
         type: 3}
