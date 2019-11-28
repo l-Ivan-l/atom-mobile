@@ -20,4 +20,5 @@ public static class MyTags
   public static string SPAWN_02_TAG = "SpawnRobot02";
   public static string SPAWN_03_TAG = "SpawnRobot03";
   public static string PORTAL_TAG = "Portal";
+  public static string SPAWN_04_TAG = "SpawnRobot04";
 }//class

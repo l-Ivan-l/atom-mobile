@@ -312,7 +312,7 @@ public class DungeonGenerator : MonoBehaviour
     void GenerateEnemies()
     {
       for(int i = 1; i < modulesInDungeon.Count - 1; i++) {
-        if(modulesInDungeon[i].CompareTag(MyTags.ROOM_TAG)) {
+        if(modulesInDungeon[i].CompareTag(MyTags.ROOM_TAG) || modulesInDungeon[i].CompareTag(MyTags.TREASURE_ROOM_TAG)) {
           modulesInDungeon[i].GetComponent<EnemiesGenerator>().SpawnEnemies();
         }
       }

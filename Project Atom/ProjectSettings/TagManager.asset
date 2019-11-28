@@ -36,6 +36,7 @@ TagManager:
   - Ray
   - BossRoom02
   - MeatTrace
+  - SpawnRobot04
   layers:
   - Default
   - TransparentFX

@@ -24,6 +24,7 @@ public class SensorScript : MonoBehaviour
           Singleton.Instance.StopTime = 5f;
         } else if(this.gameObject.transform.parent.gameObject.CompareTag(MyTags.TREASURE_ROOM_TAG)) {
           //Freeze Player
+          minimapScript.CanInteract = false;
           Singleton.Instance.StopTime = 0.5f;
         } else if(this.gameObject.transform.parent.gameObject.CompareTag(MyTags.BOSS_02_ROOM_TAG)) {
           minimapScript.CanInteract = false;
