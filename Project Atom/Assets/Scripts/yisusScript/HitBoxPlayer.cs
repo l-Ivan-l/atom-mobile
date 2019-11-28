@@ -22,7 +22,7 @@ public class HitBoxPlayer : MonoBehaviour
 
         if(other.CompareTag("WinOrb"))
         {
-            SceneManager.LoadScene("final");
+            SceneManager.LoadScene("SamuraiFloor");
         }
 
 

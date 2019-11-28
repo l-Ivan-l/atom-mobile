@@ -109,7 +109,7 @@ public class PCBoss : Boss
         case 0:
           if(playerInRoom) {
               PCIntroduction();
-              playerCamera.gameObject.GetComponent<CameraFollow>().CameraZoomOut();
+              playerCamera.gameObject.GetComponent<CameraFollow>().cameraZoom.CameraZoomOut();
               if(!introStarted) {
                 gameAudio.clip = bossMusic;
                 gameAudio.Play();
@@ -120,7 +120,7 @@ public class PCBoss : Boss
         break;
 
         case 1:
-          playerCamera.gameObject.GetComponent<CameraFollow>().CameraZoomIn();
+          playerCamera.gameObject.GetComponent<CameraFollow>().cameraZoom.CameraZoomIn();
           ShadowBehaviour();
         break;
 
