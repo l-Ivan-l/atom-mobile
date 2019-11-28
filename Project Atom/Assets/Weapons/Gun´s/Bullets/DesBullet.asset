@@ -25,6 +25,9 @@ MonoBehaviour:
   recoil: 0
   follow: 0
   rangeFollow: 0
+  bulletPoisoned: 1
+  poisonMaterial: {fileID: 2100000, guid: aa32f37aa5fe6a440a2c168a173a6936, type: 2}
+  poisonPorcentage: 50
   mesh: {fileID: -8736923667508067185, guid: efa4855d2ea19c348a7246a2cb0ab13f, type: 3}
   material: {fileID: 2100000, guid: 9e961712385f2fa48857a4dcda5b428d, type: 2}
   trail: {fileID: 1439604059103553706, guid: 47b90900532d1dd45ae120055bbe56b5, type: 3}
