@@ -302,6 +302,24 @@ PrefabInstance:
       propertyPath: light
       value: 
       objectReference: {fileID: 865697163}
+    - target: {fileID: 6612182905792777297, guid: 50732bd1ef60fb749b6cc6df1bd8466f,
+        type: 3}
+      propertyPath: hallPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 812320052373471621, guid: 1dcbe7393842b1d4c8a52ba8c32bc89f,
+        type: 3}
+    - target: {fileID: 6612182905792777297, guid: 50732bd1ef60fb749b6cc6df1bd8466f,
+        type: 3}
+      propertyPath: hallPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 6044317611129263819, guid: 5ad475e772364f7468795ab33a347ee9,
+        type: 3}
+    - target: {fileID: 6612182905792777297, guid: 50732bd1ef60fb749b6cc6df1bd8466f,
+        type: 3}
+      propertyPath: hallPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 7898930239039233062, guid: 86016775567d622408802ca3f728a9e2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50732bd1ef60fb749b6cc6df1bd8466f, type: 3}
 --- !u!1001 &180477073
@@ -603,12 +621,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &575513890 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6802139365027744881, guid: 24018da8b5c0d3243b72a59b2b51909c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1430473858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &602235781
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,9 +977,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1172103385 stripped
+--- !u!114 &1288944692 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
+  m_CorrespondingSourceObject: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
     type: 3}
   m_PrefabInstance: {fileID: 1372138678}
   m_PrefabAsset: {fileID: 0}
@@ -1037,6 +1049,11 @@ PrefabInstance:
       propertyPath: dashDuration
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2548984768437247699, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1092,14 +1109,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 1523285451}
     - target: {fileID: 1617243858, guid: 371093cb97ce6404bb6e605ee3266544, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9212566032138693168, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6898764490797860251, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
@@ -1357,6 +1379,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.29999924
       objectReference: {fileID: 0}
+    - target: {fileID: 2537622618935961165, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958622872094339398, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1093934089, guid: 24018da8b5c0d3243b72a59b2b51909c, type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -1369,11 +1401,55 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 8889585186662410809, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34cf0bf61a95b9544b6e4ca7db094948,
+        type: 3}
+    - target: {fileID: 8889585186662410809, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889585186662410809, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889585186662410809, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.8705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889585186662410809, guid: 24018da8b5c0d3243b72a59b2b51909c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.003921569
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24018da8b5c0d3243b72a59b2b51909c, type: 3}
 --- !u!95 &1430473859 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2031809940031134574, guid: 24018da8b5c0d3243b72a59b2b51909c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1430473858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1430473860 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6484090514427059022, guid: 24018da8b5c0d3243b72a59b2b51909c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1430473858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1430473861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 988320431356229507, guid: 24018da8b5c0d3243b72a59b2b51909c,
     type: 3}
   m_PrefabInstance: {fileID: 1430473858}
   m_PrefabAsset: {fileID: 0}
@@ -1673,12 +1749,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacd466711006554f879e55cc0d1c745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wepon: {fileID: 1172103385}
+  wepon: {fileID: 1288944692}
   playerLife: {fileID: 1704345199}
   weaponHUD: {fileID: 1972264598}
   FillCharger: {fileID: 281133650}
   FillChargeShoot: {fileID: 996918418}
-  img_PlayerLife: {fileID: 1063422229}
+  img_PlayerLife: {fileID: 1430473860}
   Weapons:
   - {fileID: 21300000, guid: 73425bc199468b8419cd7c9f4e3b0422, type: 3}
   - {fileID: 21300000, guid: d16aa19879a764740abdd73693e48eb8, type: 3}
@@ -1693,7 +1769,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 59d2ebda12f9fb740b1f79dbac71bc1a, type: 3}
   - {fileID: 21300000, guid: 44c2f61a3a27eab47865f4796a0ae879, type: 3}
   Bullets: []
-  animChargeShootBar: {fileID: 575513890}
+  chargueShootObject: {fileID: 1430473861}
   anim_Life: {fileID: 1430473859}
   bossBar: {fileID: 2105903618}
 --- !u!82 &1574243572
@@ -2109,6 +2185,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1704345202}
     m_Modifications:
+    - target: {fileID: 2400402985075144690, guid: 5aba95b8e0b8242478886650689f4588,
+        type: 3}
+      propertyPath: m_Name
+      value: MinimapIcon
+      objectReference: {fileID: 0}
     - target: {fileID: 2400402985075144693, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2147,7 +2228,7 @@ PrefabInstance:
     - target: {fileID: 2400402985075144693, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2400402985075144693, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
@@ -2173,11 +2254,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2400402985075144690, guid: 5aba95b8e0b8242478886650689f4588,
-        type: 3}
-      propertyPath: m_Name
-      value: MinimapIcon
       objectReference: {fileID: 0}
     - target: {fileID: 2400402985075144692, guid: 5aba95b8e0b8242478886650689f4588,
         type: 3}
