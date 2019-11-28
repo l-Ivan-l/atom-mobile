@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6218630876163771914}
   - component: {fileID: 6218630876163771915}
   - component: {fileID: 4100922910034415308}
+  - component: {fileID: -1930172287620017558}
   m_Layer: 0
   m_Name: M1Garand
   m_TagString: M1
@@ -106,3 +107,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedR: 40
+--- !u!114 &-1930172287620017558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218630876163770868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394124e36c45d1045874cd66829dfeb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualWepon: 11
+  actualBullet: 11

@@ -34,8 +34,9 @@ TagManager:
   - Gatling
   - M1
   - Ray
-  - PCBoss
-  - DoorSensor
+  - BossRoom02
+  - MeatTrace
+  - SpawnRobot04
   layers:
   - Default
   - TransparentFX

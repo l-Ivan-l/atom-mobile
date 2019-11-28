@@ -71,6 +71,8 @@ public class EnemiesGenerator : MonoBehaviour
           enemyIndex = 1;
         } else if(spawnPoint.transform.parent.gameObject.CompareTag(MyTags.SPAWN_03_TAG)) {
           enemyIndex = 2;
+        } else if(spawnPoint.transform.parent.gameObject.CompareTag(MyTags.SPAWN_04_TAG)) {
+          enemyIndex = 3;
         }
         GameObject enemy = Instantiate(enemyPrefabs[enemyIndex], spawnPoint.transform.position, Quaternion.identity, this.transform);
         //spawnPoints.Remove(spawnPoint);

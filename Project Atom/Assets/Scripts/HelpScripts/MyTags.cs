@@ -11,6 +11,7 @@ public static class MyTags
   public static string PLAYER_TAG = "Player";
   public static string BULLET_TAG = "bullet";
   public static string BOSS_ROOM_TAG = "BossRoom";
+  public static string BOSS_02_ROOM_TAG = "BossRoom02";
   public static string PRE_BOSS_ROOM_TAG = "PreBossRoom";
   public static string TREASURE_ROOM_TAG = "TreasureRoom";
   public static string ARM_BOSS_TAG = "ArmBoss";
@@ -19,7 +20,5 @@ public static class MyTags
   public static string SPAWN_02_TAG = "SpawnRobot02";
   public static string SPAWN_03_TAG = "SpawnRobot03";
   public static string PORTAL_TAG = "Portal";
-  public static string MINIMAP_TAG = "Minimap";
-  public static string PCBOSS_TAG = "PCBoss";
-  public static string DOOR_SENSOR_TAG = "DoorSensor";
+  public static string SPAWN_04_TAG = "SpawnRobot04";
 }//class

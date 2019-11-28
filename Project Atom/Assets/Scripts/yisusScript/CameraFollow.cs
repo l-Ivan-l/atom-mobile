@@ -7,11 +7,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     private Transform target;
     [SerializeField]
-    private float angle;
-    [SerializeField]
     private float height;
     [SerializeField]
     private float distance;
+    [SerializeField]
+    private float angle;
     [SerializeField]
     private float smoothTime;
     [SerializeField]
@@ -22,18 +22,19 @@ public class CameraFollow : MonoBehaviour
     private float joyDistance;
     private Vector3 moveCameraSpeed;
 
-    public CameraZoom cameraZoom = new CameraZoom();
+    private float minHeight;
+    private float maxHeight;
+    private float minDistance;
+    private float maxDistance;
 
     // Update is called once per frame
     private void Start()
     {
         MoveCamera();
-        cameraZoom.height = height;
-        cameraZoom.distance = distance;
-        cameraZoom.minHeight = cameraZoom.height;
-        cameraZoom.maxHeight = cameraZoom.height + 1f;
-        cameraZoom.minDistance = cameraZoom.distance;
-        cameraZoom.maxDistance = 1f;
+        minHeight = height;
+        maxHeight = height + 3f;
+        minDistance = distance;
+        maxDistance = 7.5f;
     }
 
     void FixedUpdate()
@@ -47,7 +48,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (!target) return;
 
-        Vector3 worldPosition = (Vector3.forward * -cameraZoom.distance) + (Vector3.up * cameraZoom.height);
+        Vector3 worldPosition = (Vector3.forward * -distance) + (Vector3.up * height);
 
         Vector3 rotateVector = (Quaternion.AngleAxis(angle, Vector3.up) * worldPosition);
 
@@ -63,5 +64,21 @@ public class CameraFollow : MonoBehaviour
 
         if(lookTarget)transform.LookAt(flatTargetPos);
 
+    }
+
+    public void CameraZoomOut()
+    {
+      /*
+      height = Mathf.Lerp(minHeight, maxHeight, Time.deltaTime * 2f);
+      distance = Mathf.Lerp(minDistance, maxDistance, Time.deltaTime * 2f);
+      */
+      height = maxHeight;
+      distance = maxDistance;
+    }
+
+    public void CameraZoomIn()
+    {
+      height = minHeight;
+      distance = minDistance;
     }
 }
