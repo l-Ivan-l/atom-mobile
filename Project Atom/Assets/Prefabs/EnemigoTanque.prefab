@@ -848,7 +848,7 @@ MonoBehaviour:
   dest: {x: 0, y: 0, z: 0}
   distance: 0
   stopDistance: 6
-  followDistance: 3
+  followDistance: 6
   impulseForce: 500
   RageMaterial: {fileID: 2100000, guid: e5a70077eddc0a544a22703e8892180f, type: 2}
   maxRageTime: 5
