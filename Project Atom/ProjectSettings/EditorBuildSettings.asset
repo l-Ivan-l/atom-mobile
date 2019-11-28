@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoScenes/GameOver.unity
     guid: 55ba92b4a190fe24498c25d75629b109
+  - enabled: 1
+    path: Assets/Scenes/DemoScenes/SamuraiFloor.unity
+    guid: 69a7f0d0508622142b39cea8d1dcf3c3
   m_configObjects: {}

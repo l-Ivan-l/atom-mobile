@@ -32,9 +32,9 @@ public class CameraFollow : MonoBehaviour
     {
         MoveCamera();
         minHeight = height;
-        maxHeight = height + 10f;
+        maxHeight = height + 3f;
         minDistance = distance;
-        maxDistance = 1f;
+        maxDistance = 7.5f;
     }
 
     void FixedUpdate()

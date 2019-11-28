@@ -81,7 +81,7 @@ public class EnemyRobotBehavior : Enemy,IDamageable,IAlteredEffects
                         Vector3 direction = atakZone[i].transform.position - transform.position;
                         direction.y = 0;
                         atakZone[i].gameObject.GetComponentInParent<IDamageable>().Hurt(damage);
-                        atakZone[i].gameObject.GetComponentInParent<IDamageable>().EnableKnockback(direction, 5f, 30);
+                        atakZone[i].gameObject.GetComponentInParent<IDamageable>().EnableKnockback(direction, 5f, 20);
                     }
                 }
                 atakZone = null;

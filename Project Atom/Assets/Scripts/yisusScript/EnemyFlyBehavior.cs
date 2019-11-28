@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //
-public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects
+public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects, IFlyEnemy
 {
     [Header("Movement")]
     private Vector3 initialVelocity;
@@ -17,6 +17,9 @@ public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects
     [SerializeField] private ParticleSystem particle;
     [SerializeField] private SphereCollider sphereCol;
     [SerializeField] private CapsuleCollider capsuleCol;
+
+    public IFlyEnemy FlyEnemy;
+  
 
 
     // Start is called before the first frame update
@@ -87,12 +90,13 @@ public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects
         if (life <= 0)
         {
 
-            StartCoroutine(MorirCo());
+            StartCoroutine(FlyEnemy.MorirCo());
 
         }
+       
     }
 
-    IEnumerator MorirCo()
+    public IEnumerator MorirCo()
     {
         
         gameObject.layer = 1;
@@ -119,8 +123,7 @@ public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects
         hurtEffect.Play();
         life -= Damage;
     }
-    // AlteredEffects 
-
+    //Temporal
     void IAlteredEffects.Poisoned(float damage, int times)
     {
         StartCoroutine(CoPoisoned(damage, times));
@@ -143,4 +146,12 @@ public class EnemyFlyBehavior : Enemy,IDamageable,IAlteredEffects
         }
         enemyShape.material = standarMaterial;
     }
+
+//Ignorar
+public void Die2(float life2)
+{
+    life=life2;
+    Die();
+}
+
 }
