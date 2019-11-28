@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5453387788230273781}
   - component: {fileID: 5453387788230273780}
   - component: {fileID: 8025437270099647669}
+  - component: {fileID: -1336921921941085113}
   m_Layer: 0
   m_Name: Frank
   m_TagString: Frank
@@ -106,3 +107,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedR: 40
+--- !u!114 &-1336921921941085113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453387788230274315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394124e36c45d1045874cd66829dfeb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualWepon: 5
+  actualBullet: 5

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyRobotBehavior : Enemy,IDamageable
+public class EnemyRobotBehavior : Enemy,IDamageable,IAlteredEffects
 {
     // Start is called before the first frame update
     [SerializeField]
@@ -33,11 +33,6 @@ public class EnemyRobotBehavior : Enemy,IDamageable
     void FixedUpdate()
     {
         transform.LookAt(target);
-        EnemyState(life);
-
-    }
-    public void EnemyState(float life)
-    {
         if (life <= 0)
         {
             Die();
@@ -86,7 +81,7 @@ public class EnemyRobotBehavior : Enemy,IDamageable
                         Vector3 direction = atakZone[i].transform.position - transform.position;
                         direction.y = 0;
                         atakZone[i].gameObject.GetComponentInParent<IDamageable>().Hurt(damage);
-                        atakZone[i].gameObject.GetComponentInParent<IDamageable>().EnableKnockback(direction, 5f, 30);
+                        atakZone[i].gameObject.GetComponentInParent<IDamageable>().EnableKnockback(direction, 5f, 20);
                     }
                 }
                 atakZone = null;
@@ -143,5 +138,28 @@ public class EnemyRobotBehavior : Enemy,IDamageable
         hurtEffect.Play();
         anim.Play("RobotHit");
         life -= Damage;
+    }
+
+    //----------IAlteredEffects--------------------------
+    void IAlteredEffects.Poisoned(float damage, int times)
+    {
+        StartCoroutine(CoPoisoned(damage, times));
+    }
+    //---------------Coroutines AlteredEffects-------------------
+    IEnumerator CoPoisoned(float damage, int times)
+    {
+        int iterator = 0;
+
+        while(iterator < times)
+        {
+            life -= damage;
+            enemyShape.material = poisonedMaterial;
+            Debug.Log("POISONED!!!");
+            yield return new WaitForSeconds(0.4f);
+            enemyShape.material = standarMaterial;
+            yield return new WaitForSeconds(0.2f);
+            iterator++;
+        }
+        enemyShape.material = standarMaterial;
     }
 }

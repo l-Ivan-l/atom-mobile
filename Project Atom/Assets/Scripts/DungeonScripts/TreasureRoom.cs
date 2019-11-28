@@ -7,6 +7,7 @@ public class TreasureRoom : Module
     public GameObject[] weaponPrefabs;
     public Transform[] gunSpawn;
     private int[] weaponIndex = new int[2];
+    public GameObject portal;
 
     void Awake()
     {
@@ -35,7 +36,14 @@ public class TreasureRoom : Module
         Vector3 weaponPosition = gunSpawn[i].position;
         GameObject weapon = Instantiate(weaponPrefabs[weaponIndex[i]], weaponPosition, Quaternion.identity, this.transform);
       }
+    }
 
+    void OnTriggerEnter(Collider target)
+    {
+      if(target.gameObject.CompareTag(MyTags.PLAYER_TAG)) {
+        ModuleDiscovered();
+        portal.SetActive(true);
+      }
     }
 
 }//class

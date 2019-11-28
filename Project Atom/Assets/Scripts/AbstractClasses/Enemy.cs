@@ -10,6 +10,9 @@ public abstract class Enemy : MonoBehaviour
     public float life;
     public bool die;
     public float speed;
+    public SkinnedMeshRenderer enemyShape;
+    public Material standarMaterial;
+    public Material poisonedMaterial;
 
     [Header("DropItem")]
     public DropItemController dropController;

@@ -21,6 +21,7 @@ public class BulletBehavior : MonoBehaviour
     public List<Bullet> actualBullet;
     GameController pullController;
 
+    int probability;
     private void Awake()
     {
         
@@ -29,6 +30,8 @@ public class BulletBehavior : MonoBehaviour
         rigid = gameObject.GetComponent<Rigidbody>();
         joy = GameObject.Find("JoyShoot").GetComponent<Joystick>();
         lifeTime = bullet.lifeTime;
+        SeleccionarBala();
+        BulletAspect();
         //shootPoint = GameObject.Find("ShootPoint").transform;
 
         //GravityBullet();
@@ -58,8 +61,7 @@ public class BulletBehavior : MonoBehaviour
     private void OnEnable()
     {
         //GravityBullet();
-        SeleccionarBala();
-        BulletAspect();
+        
         StartCoroutine(EleguirDireccion());
         Debug.Log("Disparando");
     }
@@ -73,17 +75,26 @@ public class BulletBehavior : MonoBehaviour
             collision.gameObject.GetComponent<IDamageable>().Hurt(bullet.damage);
             collision.gameObject.GetComponent<IDamageable>().EnableKnockback(direction, 5f, bullet.knockback);
         }
+        if (collision.gameObject.GetComponent<IAlteredEffects>() != null)
+        {
+            if (BulletPoisoned())
+                collision.gameObject.GetComponent<IAlteredEffects>().Poisoned(bullet.damage * 0.10f, 5);
+        }
         /*Knockback(collision);*/
         if(!bullet.bounce) DisableBullet();
     }
 
     IEnumerator EleguirDireccion()
     {
-
+        probability = Random.Range(0, 101);
+        if(BulletPoisoned())
+        {
+            gameObject.GetComponent<MeshRenderer>().material = bullet.poisonMaterial;
+        }
         Recoil();
         //particle.Play();
         lifeTime = bullet.lifeTime;
-        gameObject.GetComponent<MeshRenderer>().enabled = true;
+        //gameObject.GetComponent<MeshRenderer>().enabled = true;
         gameObject.transform.rotation = shootPoint.rotation;
         gameObject.transform.position = shootPoint.position;
         rigid.AddForce((shootPoint.forward * bullet.speed) + (shootPoint.right * recoil * bullet.speed) + (shootPoint.up * bullet.upForce), ForceMode.Impulse);
@@ -92,7 +103,7 @@ public class BulletBehavior : MonoBehaviour
         gameObject.GetComponent<TrailRenderer>().enabled = true;
     }
 
-    void BulletAspect()
+    public void BulletAspect()
     {
         gameObject.GetComponent<MeshRenderer>().material = bullet.material;
         gameObject.GetComponent<MeshFilter>().mesh = bullet.mesh;
@@ -107,7 +118,7 @@ public class BulletBehavior : MonoBehaviour
 
     }
 
-    void SeleccionarBala()
+    public void SeleccionarBala()
     {
         if (bullet.enemyBullet) bullet = actualBullet[0];
         else bullet = actualBullet[Singleton.Instance.ActualBullet];
@@ -154,9 +165,11 @@ public class BulletBehavior : MonoBehaviour
     void DisableBullet()
     {
         ActiveImpactEffect();
+        
         gameObject.GetComponent<TrailRenderer>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        //gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.transform.position = shootPoint.position;
+        gameObject.GetComponent<MeshRenderer>().material = bullet.material;
         rigid.velocity = Vector3.zero;
         lifeTime = bullet.lifeTime;
         gameObject.SetActive(false);
@@ -194,6 +207,23 @@ public class BulletBehavior : MonoBehaviour
         if (pullController.iPullParticles >= pullController.numberOfParticles)
             pullController.iPullParticles = 0;
     }
+
+    //-----------------AlteredEffects------------------------------------
+    bool BulletPoisoned()
+    {
+        if(bullet.bulletPoisoned)
+        {
+            
+            if (probability <= bullet.poisonPorcentage)
+            {
+                return true;
+            }
+                
+        }
+        return false;
+    }
+    
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
