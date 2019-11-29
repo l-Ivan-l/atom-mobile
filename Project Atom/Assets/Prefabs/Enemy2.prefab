@@ -9639,7 +9639,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bf5de1c514f93f64da055c6eae184388, type: 2}
+  - {fileID: 2100000, guid: 1d8615139945fbc4dbb276bf9b737487, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9745,7 +9745,7 @@ MonoBehaviour:
   die: 0
   speed: 2
   enemyShape: {fileID: 7116544763603498627}
-  standarMaterial: {fileID: 2100000, guid: bf5de1c514f93f64da055c6eae184388, type: 2}
+  standarMaterial: {fileID: 2100000, guid: 1d8615139945fbc4dbb276bf9b737487, type: 2}
   poisonedMaterial: {fileID: 2100000, guid: aa32f37aa5fe6a440a2c168a173a6936, type: 2}
   dropController: {fileID: 0}
   rotateForce: 150

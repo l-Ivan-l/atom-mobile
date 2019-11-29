@@ -6048,6 +6048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
+        type: 3}
+      propertyPath: JoystickShoot
+      value: 
+      objectReference: {fileID: 728081881}
     - target: {fileID: 946718368132248791, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: Joystick
@@ -6118,11 +6123,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1973268701871026549, guid: 371093cb97ce6404bb6e605ee3266544,
-        type: 3}
-      propertyPath: JoystickShoot
-      value: 
-      objectReference: {fileID: 728081881}
     - target: {fileID: 7164077159908777494, guid: 371093cb97ce6404bb6e605ee3266544,
         type: 3}
       propertyPath: m_Enabled
@@ -6969,6 +6969,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8724814732971870033, guid: b489dc08fb4d03648b918eb739f25d49,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6922740426416645442, guid: b489dc08fb4d03648b918eb739f25d49,
         type: 3}
       propertyPath: RageMaterial
@@ -6983,11 +6988,6 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8724814732971870033, guid: b489dc08fb4d03648b918eb739f25d49,
-        type: 3}
-      propertyPath: m_StoppingDistance
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8676490509880478543, guid: b489dc08fb4d03648b918eb739f25d49,
         type: 3}
@@ -7215,7 +7215,7 @@ PrefabInstance:
     - target: {fileID: 6429692798993946277, guid: 341fea54eae3b0642806d06138eb14dd,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6429692798993946272, guid: 341fea54eae3b0642806d06138eb14dd,
         type: 3}
