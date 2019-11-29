@@ -1,0 +1,14 @@
+{
+    "name": "Tests",
+    "references": [
+        "GUID:b35c370d2756b7146bb037e9adddb74f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
